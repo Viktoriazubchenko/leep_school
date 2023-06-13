@@ -1,0 +1,42 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	display: inline-flex;
+	@media (any-hover: hover) {
+		
+	}
+	&._fw {
+		width: 100%;
+	}
+	
+	padding: 0rem 3rem;
+	height: 3rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	&-primary {
+		background-color: $secondary_color;
+		color: white;
+		&:hover {
+			background-color: $primary_color;
+		}
+	}
+	&-secondary {
+		background-color: transparent;
+		border: 2px solid white;
+		&:hover {
+			background-color: $secondary_color;
+		}
+	}
+	&-ternary {
+		background-color: transparent;
+		border: 2px solid $primary_color;
+		color: $primary_color;
+		&:hover {
+			background-color: $secondary_color;
+			border: 2px solid $secondary_color;
+			color: white;
+		}
+	}
+}

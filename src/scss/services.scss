@@ -1,0 +1,53 @@
+.services {
+    position: relative;
+    &__top {
+        padding-top: 3rem;
+        height: 22rem;
+        text-align: center;
+        background-color: blueviolet;
+        background-image: url('img/closeup-luxurious-glossy-hair.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    &__heading {
+        color: white;
+    }
+    &__bottom {
+        background-color: white;
+        height: 15rem;
+    }
+    &__grid {
+        max-width: 1440px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+        background-color: white;
+        .service {
+            flex: 1;
+            position: relative;
+            &__image {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &__info {
+                width: 70%;
+                position: absolute;
+                left: 50%;
+                top: 90%;
+                transform: translateX(-50%);
+                text-align: center;
+                padding: 1rem;
+                background: linear-gradient(to bottom, #614385, #516395);
+                color: white;
+            }
+        }
+    }
+}

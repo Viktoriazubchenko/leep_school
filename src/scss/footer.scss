@@ -1,0 +1,61 @@
+//====================================================================================================
+
+//====================================================================================================
+
+.footer {
+    //background-image: url("img/footer-bg.jpeg");
+    background: linear-gradient(to bottom, #614385, #516395);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+    address {
+        font-style: normal;
+        font-family: $monserrat;
+    }
+    
+    .container {
+        display: flex;
+        gap: 3rem;
+    }
+    .social-m {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .base {
+        flex: 1;
+    }
+    .open-time {
+        p{
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+        }
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        flex: 2;
+        .ot-item {
+            display: flex;
+            gap: 0.5rem;
+            align-items: baseline;
+            
+            span {
+                flex: auto;
+                border-bottom: dotted 1px white;
+            }
+        }
+    }
+    .contact-information {
+        flex: 1;
+        p, a, address {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;
+            margin-bottom: 1rem;
+        }
+    }
+}

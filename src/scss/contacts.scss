@@ -1,0 +1,63 @@
+.contacts {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(to bottom, #614385, #516395);
+    &__heading {
+        text-align: center;
+        color: white;
+    }
+    &__body {
+        display: flex;
+        gap: 2rem;
+    }
+    &__form {
+        flex: 1;
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        fieldset {
+            display: flex;
+            gap: 1rem;
+        }
+        input:not(input[type="submit"], input[type="checkbox"]) {
+            padding: 1rem 3rem 1rem .5rem;
+            border: 1px solid lightgray;
+            width: 100%;
+        }
+        textarea {
+            border: 1px solid lightgray;
+            padding: 1rem 1rem 1rem .5rem;
+            overflow-y: scroll;
+        }
+        input[type="submit"]{
+            align-self: flex-start;
+            cursor: pointer;
+        }
+    }
+    &__info {
+        flex: 1;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        address {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-family: $monserrat;
+            font-style: normal;
+        }
+        .contact-item {
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;
+        }
+        .social-media {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+    
+}

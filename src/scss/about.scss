@@ -1,0 +1,17 @@
+.about {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(to right, #614385, #516395);
+    &__heading {
+        color: $secondary_color;
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    &__info {
+        color: white;
+    }
+    &__button {
+       
+    }
+}

@@ -1,0 +1,24 @@
+.hero {
+    height: 100vh;
+    //clip-path: polygon(0 0%, 100% 0, 100% 90%, 0 100%);
+    background-image: url("img/beautiful-young-brunette-with-make-up-curly-hair.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .container {
+        position: relative;
+    }
+    &__info {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        h1, p, a {
+            color: #ffffff;
+        }
+    }
+    &__buttons {
+        display: flex;
+        gap: 1rem;
+    }
+}

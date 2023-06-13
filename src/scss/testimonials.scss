@@ -1,0 +1,46 @@
+.team {
+    padding-bottom: 3rem;
+    &__wrapper {
+        display: flex;
+        position: relative;
+        height: 30rem;
+        &::after{
+            position: absolute;
+            content: "";
+            width: calc(100% - 3rem);
+            height: calc(100% - 3rem);
+            //background-color: rgba(0, 0, 0, 0.448);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: solid $secondary_color 2px;
+        }
+    }
+    &__heading {
+        text-align: center;
+        
+    }
+    &__info {
+        flex: 1;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        z-index: 2;
+        h3 {
+            color: $secondary_color;
+        }
+    }
+    &__button {
+        align-self: flex-end;
+    }
+    &__image {
+        flex: 1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

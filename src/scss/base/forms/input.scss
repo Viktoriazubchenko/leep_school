@@ -1,0 +1,31 @@
+//<INPUT>
+// Сніппет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-family: $monserrat;
+	
+}
+label {
+	font-family: $monserrat;
+}
+input[type="submit"] {
+	font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $monserrat;
+	padding: 0rem 3rem;
+	height: 3rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	color: white;
+	border: 2px white solid;
+}
+
